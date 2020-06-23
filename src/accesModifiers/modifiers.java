@@ -11,10 +11,16 @@ package accesModifiers;
  */
 public class modifiers {
 
-	public String GetInfo() {
+	public static String GetInfo() {
 		return ("If you are declaring member variable with private or no mod you heve to"
 				+ "write a getter and setter for them to use "
 				+ "and this key word is reffering directly to the class member variable");
+	}
+	
+	public static void main (String []args ) {
+		System.out.println(GetInfo());
+		FinalKeyWord fin=new FinalKeyWord();
+		System.out.println(fin.GetInfo());
 	}
 	
 }
